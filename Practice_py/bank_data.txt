@@ -2,3 +2,4 @@ HDFC,120,150
 SBI,90,110
 HSBC,140,170
 Barclays,70,80
+Deutsche,105,95

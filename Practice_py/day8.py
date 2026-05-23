@@ -52,3 +52,38 @@ def function5():
     filename.close()
 
 function5()
+
+def function6():
+    filename=open("bank_data.txt", "r")
+    content=filename.readlines()
+    fully_compliant=0
+    partially_compliant=0
+    non_compliant=0
+
+    for line in content:
+        parts=line.strip().split(",")
+        lcr=int(parts[1])
+        nsfr=int(parts[2])
+        if(lcr>=100 and nsfr>=100):
+            status="Fully compliant"
+            fully_compliant+=1
+        elif((lcr>=100 and nsfr<=100) or (lcr<=100 and nsfr>=100)):
+            status="Partially compliant"
+            partially_compliant+=1
+        else:
+            status="Non compliant"
+            non_compliant+=1
+
+        print(f"{parts[0]} -> {status}")
+
+    print(f"Fully compliant banks: {fully_compliant}")
+    print(f"Partially compliant banks: {partially_compliant}")
+    print(f"Non compliant banks: {non_compliant}")
+
+function6()    
+
+
+
+
+
+
