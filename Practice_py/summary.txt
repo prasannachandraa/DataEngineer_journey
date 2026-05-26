@@ -1,0 +1,7 @@
+Total rows processed: 6
+Valid rows: 3
+Invalid rows: 3
+Empty field rows: 1
+Non numeric rows: 1
+Schema invalid rows: 1
+Duplicate rows: 0

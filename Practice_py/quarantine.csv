@@ -1,2 +1,4 @@
-1003,CA,ABCDEF,Axis
-1006,CA,,Barclays
+Bank,City,Balance,Owner,Risk_category
+SBI,Mumbai,abc,Amit
+ICICI,,45000,Neha
+PNB,Delhi

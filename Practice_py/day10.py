@@ -71,3 +71,49 @@ def write_csv(filename):
         print("📁 Check quarantine.csv!!")
 
 write_csv("ca.csv")
+
+
+def write_results(filename):
+    quarantine=[]
+
+    with open ('ca.csv', 'r') as filename, open('results.csv', 'w', newline="") as filename1:
+        reader=csv.reader(filename)
+        
+        header=next(reader)
+        header.append('status')
+        writer=csv.writer(filename1)
+        writer.writerow(header)
+
+        for row in reader:
+            has_empty=False
+            for value in row:
+                if(value==""):
+                    has_empty=True
+                    break;
+                
+            if(has_empty):
+                    quarantine.append(row)
+                    print(f"Bad row: {row[0]} {row[3]} has empty value")
+                    continue
+
+            if not (row[2].isdigit()):
+                quarantine.append(row)
+                print(f"Bad rows: {row[0]} {row[3]} - is not a digit")
+                continue
+
+
+            row[2]=int(row[2])
+            if(row[2]>50000):
+                row.append('High value')
+            else:
+                row.append('Regular')
+            
+            writer.writerow(row)
+            print(f"Values Appended to results.csv - Check it")
+
+write_results("ca.csv")             
+                    
+
+                
+
+
