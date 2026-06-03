@@ -1,4 +1,2 @@
-Bank,City,Balance,Owner,Risk_category
-SBI,Mumbai,abc,Amit
-ICICI,,45000,Neha
-PNB,Delhi
+TXN002,ACC_8822,invalid_amount,FAILED
+TXN005,,50000,SUCCESS

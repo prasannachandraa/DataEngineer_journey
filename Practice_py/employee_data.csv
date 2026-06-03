@@ -1,0 +1,9 @@
+EmpID,Name,Salary,Department
+101,Rahul,85000,IT
+102,Priya,abc,HR
+103,,65000,Finance
+104,Amit,120000,Engineering
+105,Kiran,45000,Support
+106,Sneha,,Admin
+107,Arjun,70000
+108,Meera,95000,Sales
