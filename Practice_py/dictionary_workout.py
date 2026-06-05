@@ -30,3 +30,48 @@ for account_id, amount in mock_transactions:
 
 # Print the final ledger to check your work
 print("Final Balances:", account_balances)
+
+
+#def count_departments(employees):
+
+    #department_list={}
+
+    #for employee in employees:
+        
+    #    department=employee["dept"]
+
+    #    if department in department_list:
+    #        department_list[department]+=1
+    #    else:
+    #        department_list[department]=1
+        
+    #    return department_list
+
+
+#count_departments(employees)
+
+transactions = [
+    {"bank": "SBI", "amount": 1000},
+    {"bank": "HDFC", "amount": 2000},
+    {"bank": "SBI", "amount": 500}
+]
+
+def calculate_bank_totals(transactions):
+    final_derived={}
+
+    for transaction in transactions:
+        particular_trans=transaction["bank"]
+        amount=transaction["amount"]
+
+        if particular_trans in final_derived:
+            final_derived[particular_trans]+=amount
+        else:
+            final_derived[particular_trans]=amount
+
+    return final_derived
+
+calculate_bank_totals(transactions)
+
+
+
+        

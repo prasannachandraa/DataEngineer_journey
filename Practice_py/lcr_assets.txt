@@ -1,0 +1,5 @@
+CASH,Government Bonds,5000000
+CASH,Central Bank Reserves,3000000
+EQUITY,Common Stock,1200000
+CASH,Physical Cash,1500000
+EQUITY,Corporate Shares,800000
