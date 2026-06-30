@@ -1,0 +1,6 @@
+employees = [
+    {"name": "Rahul", "salary": "50000"},
+    {"name": "Anu", "salary": "abc"},
+    {"name": "Vijay", "salary": "-1000"},
+    {"name": "Priya", "salary": "70000"}
+]
